@@ -71,7 +71,7 @@ p {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: rgba(70, 70, 70, 0.8);
+    background-color: #EBFCD2;
     color: #999999;
     text-align: center;
     padding: 10px 10px;

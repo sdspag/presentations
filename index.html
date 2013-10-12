@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Lectures | PAG</title>
     <meta name="author" content="PAG">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css"> 
     <link rel="stylesheet" href="assets/pure-min.css"> 
     <link rel="stylesheet" href="assets/main.css"> 
@@ -13,18 +13,15 @@
 
   <div class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed" >
       <ul>
-          <li><a href="//pag.sdslabs.co">Home</a></li>
-          <li><a href="//pag.sdslabs.co/blog/">Blog</a></li>
-          <li><a href="//facebook.com/groups/sdspag/">Discussion Group</a></li>
-          <li><a target="_blank" href="//facebook.com/sdspag"><!--<img src="assets/images/fb-icon.png" width=30px; style="margin-left=200px"; alt="">
-          <span class="icon-stack">
-            <i class="icon-circle icon-stack-base"></i>
-            <i class="icon-facebook icon-light"></i>
-          </span>-->
-          <i class="icon-facebook icon-large"></i></a></li>
-          <li><a target="_blank" href="//plus.google.com/117727978834269911101"><!--<img src="assets/images/gp-icon.png" width=30px; alt="">--><i class="icon-google-plus icon-large"></i></a></li>
-          <li><a target="_blank" href="//github.com/sdspag"><!--<img src="assets/images/gh-icon.png" width=30px; alt="">--><i class="icon-github icon-large"></i></a></li>
-          <li><a target="_blank" href="mailto:pagiitr@gmail.com"><!--<img src="assets/images/email.png" width=30px; alt="">--><i class="icon-envelope icon-large"></i></a></li>
+        <li><a href="//pag.sdslabs.co">Home</a></li>
+        <li><a href="//pag.sdslabs.co/blog/">Blog</a></li>
+        <li><a href="//facebook.com/groups/sdspag/">Discussion Group</a></li>
+      </ul>
+      <ul style="float:right;">
+        <li><a target="_blank" href="//facebook.com/sdspag"><i class="icon-facebook icon-large"></i></a></li>
+        <li><a target="_blank" href="//plus.google.com/117727978834269911101"><i class="icon-google-plus icon-large"></i></a></li>
+        <li><a target="_blank" href="//github.com/sdspag"><i class="icon-github icon-large"></i></a></li>
+        <li><a target="_blank" href="mailto:pagiitr@gmail.com"><i class="icon-envelope icon-large"></i></a></li>
       </ul>
   </div>
 
@@ -45,11 +42,16 @@
 
 
   <div class="footer">
-        <div class="fb-like" data-href="//facebook.com/sdspag" data-send="true" data-width="1000" data-show-faces="true"></div>
-        <div id="fb-root"></div>
+    <footer role="contentinfo">
+      <p>
+        <div class="fb-like" data-href="http://facebook.com/sdspag" data-send="true" data-width="1000" data-show-faces="true"></div>
+      </p>
+      <p>
         Copyright &copy; 2013 - Programming & Algorithms Group, Software Development Section, IIT Roorkee
+      </p>
+    </footer>
   </div>
-
+  <div id="fb-root"></div>
 
   <script>
     (function(d, s, id) 
@@ -57,7 +59,7 @@
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) {return;}
       js = d.createElement(s); js.id = id; js.async = true;
-      js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+      js.src = "http://connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
