@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>PAG - Data Structures</title>
+
+    <meta name="description" content="Data Structures">
+    <meta name="author" content="Programming And Algorithms Group">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>PAG</h1>
+                                        <div>
+                                          <br>
+                                       </div>
+                                       <div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="pag.png">
+<br>
+</div>
+				</section>
+
+				<section>
+					<p>
+<font style="font-size: 72px;">Data Structures</font>
+</p>
+
+
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<p>Data Structures provide a way to organize and store data efficiently.</p>
+						
+					</section>
+					<section>
+						<h2>Basic OPERAtions on Data Structures</h2>
+                                                <div>
+                                                <ul>
+                                                <li>Search(S,k)</li>
+                                                <li>Insert(S,x)</li>
+                                                <li>Delete(S,x)</li>
+                                                <li>Traversing</li>
+                                                </ul>
+                                                </div>
+                                        </section>
+					
+				</section>
+
+				<section>
+					<h2>ELEMENTARY DATA STRUCTURES</h2>
+                                        <div>
+                                        <ul>
+                                        <li>Arrays</li>
+                                        <li>Linked Lists</li>
+                                        <li>Stacks</li>
+                                        <li>Queues</li>
+                                        </ul>
+                                        </div>
+                                </section>
+
+				<section>
+					<h2>Arrays</h2>
+                                        <div>
+                                        <ul>
+                                        <li>Indexed data structure</li>
+                                        <li>Contiguous memory allocation</li>
+                                        <li>Static (fixed-size) and Dynamic (variable-size)&nbsp;<span>&nbsp;</     span>&nbsp;</li>
+                                        </ul>
+                                        </div>
+                                 </section>
+
+				<section>
+					<h2>Linked Lists</h2>
+                                        <div>Linear order is determined using pointers.</div>
+                                        <div>
+                                        <ul>
+                                        <li>Single Linked List</li>
+                                        <li>Double Linked List</li>
+                                        <li>Circular List</li>
+                                        </ul>
+                                        </div>
+                                 </section>
+                              <section>
+				<section>
+					<h2>Stacks&nbsp;</h2>
+                                        <h2>LIFO</h2>
+                                        <p>(Last in First Out)</p>
+                                </section>
+
+				<section>
+					<h2>Stack OPERATIONS</h2>
+                                        <div>
+                                       <pre><code>
+STACK-EMPTY(S) {           
+  if(S.top==0)
+    return TRUE;
+  else 
+    return FALSE;
+}
+PUSH(S,x) {
+   S.top=S.top+1;
+   S[S.top]=x;
+}
+POP(S) {
+   if(STACK-EMPTY(S)
+     error "underflow";
+   else 
+     S.top= S.top-1;
+   return S[S.top+1];
+}
+</code></pre>
+    
+</div>
+</section>
+
+				<section>
+			        <h1>APPLICATIONS</h1>
+				</section>
+
+				<section>
+		                <h2>PARENTHESIS MATCHING</h2>
+				</section>
+
+				<section>
+			        <h2>EXPRESSION EVALUATION</h2>
+				</section>
+                          </section>
+                          <section>
+				<section>
+                                 
+			         <h2>QUEUES</h2>
+                                 <h2>FIFO</h2>
+                                 <div>First In First Out</div>
+                                </section>
+
+				<section>
+					<h2>QUEUE OPERATIONS</h2>
+                                <pre><code>
+ENQUEUE(Q,x) {
+   Q[Q.tail]=x;
+   if(Q.tail==Q.length)
+      Q.tail=1;
+   else 
+      Q.tail=Q.tail+1;
+}
+
+DEQUEUE(Q) {
+   x=Q[Q.head];
+   if(Q.head==Q.length)
+      Q.head=1;
+   else 
+      Q.head=Q.head+1;
+   return x;
+}
+</code></pre>
+				</section>
+
+				<section>
+			        <h1>APPLICATIONS</h1>
+				</section>
+
+				<section>
+		                <h2>PROCESS SCHEDULING</h2>
+				</section>
+
+				<section>
+			        <h2>BREADTH-FIRST SEARCH</h2>
+				</section>
+                             </section>
+
+			     <section>
+				<section>
+					<h2>BINARY HEAPS</h2>
+                                          <div>Max -heaps and Min-heaps</div>
+                                          <div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/meghanaagrawal/images/251587/images.jpg" style="width: 825.039px; height: 290.732px; max-height: none; max-width: none;">
+                                           <br>
+                                           </div>
+                                 </section>
+                                 <section>
+				     <h2>Building MAX-Heap</h2>
+                                     <pre><code>
+MAX-HEAPIFY(A,i) {
+    l=LEFT(i);
+    r=RIGHT(i);
+    if(l<=A.heap_size and A[l]>A[i])
+      largest=l;
+    else 
+      largest=i;
+    if(r<=A.heap-size and A[r]>A[largest])
+      largest=r;
+    if(largest!=i) {
+      exchange A[i] with A[largest];
+      MAX-HEAPIFY(A,largest);
+    }
+ }
+BUILD-MAX-HEAP(A){
+    A.heap-size=A.length;
+    for(i=|_A.length/2_| downto 1)
+       MAX-HEAPIFY(A,i);
+ }
+                                     </code></pre>
+
+
+	
+			         </section>
+			        <section>
+			        <h1>APPLICATIONS</h1>
+				</section>
+
+				<section>
+		                <h2>SORTING</h2>
+				</section>
+
+				<section>
+			        <h2>PRIORITY QUEUES</h2>
+				</section>
+                             </section>
+                             <section>
+				<section>
+					<h2>PRIORITY QUEUE OPERATIONS</h2>
+                                        <div>
+                                        <ol>
+                                        <li>Insert(S,x)</li>
+                                        <li>Maximum(S)</li>
+                                        <li>Extract-Max(S)</li>
+                                        <li>IncreaseKey(S,x,k)</li>
+                                        </ol>
+                                        </div>
+                                 </section>
+
+				<section>
+					<h2>IMPLEMENTATION</h2>
+<div>
+<pre><code>
+HEAP-MAXIMUM(A) {
+ return A[1];
+}
+
+HEAP-EXTRACT-MAX(A) {
+    if(A.heap-size<1)
+       error("heap underflow");
+    max=A[1];
+    A[1]=A[A.heap-size];
+    A.heap-size=A.heap-size-1;
+    MAX-HEAPIFY(A,1);
+    return max;
+}
+</code></pre>
+</div>
+				</section>
+                             <section>
+					<h2>IMPLEMENTATION</h2>
+<div>
+<pre><code>
+HEAP-INCREASE-KEY(A,i,key) {
+  if (key<(A[i]))
+    error("new key is smaller");
+  while(i>1 and A[Parent(i)]<(A[i])) {
+       swap(A[i],A[parent(i));
+       i=Parent(i);
+  }
+}
+MAX-HEAP-INSERT(A,key) {
+    A.heap-size=A.heap-sizze+1;
+    A[A.heap-size]=-infinity;
+    HEAP-INCREASE-KEY(A,A.heap-size,key);
+ }
+</code></pre>
+</div>
+                             </section>                          
+                             <section>
+			        <h1>APPLICATIONS</h1>
+				</section>
+
+				<section>
+		                <h2>PRIORITY-BASED EVENT SCHEDULING</h2>
+				</section>
+                             </section>
+                             <section>
+                             <h1> Some Practice Problems</h1>
+                             <p>
+                             <ul>
+                             <li>Design a stack using two queues.</li>
+                             <li>Design a queue using two stacks.</li>
+                             <li>Reverse the contents of stack using recursion.</li>
+                             <li>Design a min-heap given an array A.</li>
+                             <li>Design a min-priority queue.</li>
+                             </ul>
+                             </p>
+                             </section>
+                             <section>
+            <h1>The End</h1>
+<code>
+            <a href="http://pag.sdslabs.co/blog/">http://pag.sdslabs.co/blog/</a><br>
+            <a href="https://www.facebook.com/groups/sdspag/">https://www.facebook.com/groups/sdspag/</a><br>
+            <a href="https://www.facebook.com/sdspag/">https://www.facebook.com/sdspag/</a><br>
+</code>
+          </section>
+
+
+
+				
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
